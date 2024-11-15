@@ -1,0 +1,262 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* utility classes */
+.primary-text{
+    color: rgba(223, 93, 138, 0.774);
+}
+.btn{
+    display: inline-block;
+    padding: 15px 30px ;
+    border: none;
+    border-radius: 15px;
+}
+.btn-primary{
+    color: rgb(224, 172, 172);
+    border: 1px solid white;
+}
+.btn-secondary{
+    color: rgb(211, 201, 201);
+    background: #531853;
+    margin-top: 2rem;
+}
+.btn-primary:hover ,.btn-secondary:hover{
+    background-color: #531853;
+}
+
+/* header start */
+header{
+    height:600px;
+      background:url('../img/img17.webp') center center/cover no-repeat; 
+      position: relative;
+} 
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: palevioletred;
+}
+#navbar img{
+width: 110px;
+margin-left: 110x;
+}
+#navbar ul{
+display: flex;
+margin-right: 100px;
+}
+#navbar ul li a{
+    padding: 15px 20px;
+    color: white;
+    font-weight: 600;
+}
+#navbar ul li a:hover{
+    border-bottom: 2px solid #e4b95b;
+}
+header .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 75%;
+    align-items: center;
+}
+header .content h1{
+font-size: 40px;
+color: white;
+}
+header .content p{
+    margin: 20px 0 40px;
+    color: white;
+}
+header::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background:rgb(0, 0, 0 0.6);
+}
+
+/* header end */
+header .overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;right: 0;bottom: 0;
+    background-color: #0000003d;
+    z-index: 1;
+}
+
+/* about start */
+#about{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+}
+#about .title , #offers .title{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+#about h2 , #offers h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about h2{
+    color:#8a2a8a;
+}
+#about .title p{
+    font-size: 14px;
+    color: rgb(139, 135, 135);
+    font-weight: 600;
+}
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+#about .about-content img{
+    width: 450px;
+    border-radius: 50%;
+}
+#about .about-content p{
+    color: black;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+/* about end */
+/* feOffers start */
+#offers{
+    padding: 30px 0;
+    height: 80vs;
+    display: flex;
+    justify-content: center;
+    background-color: #531853;
+}
+#offers h2{
+    color: white;
+}
+#offers .title p{
+color: rgb(139, 135, 135);
+font-weight: 700; 
+}
+#offers .offers-items{
+    display: flex;
+    justify-self:center;
+    align-items: center;
+    text-align: center;
+}
+#offers .offers-items img{
+    width: 200px;
+    border-radius: 50%;
+}
+#offers .offers-items h3{
+    font-size: 25px;
+    margin: 15px 0;
+    color: #e4b95b;
+}
+#offers .offers-items p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 15px;
+    color: rgb(199, 198, 198);
+}
+#offers .offers-items span{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+    color: #e4b95b;
+}
+
+/* feOffers end */
+/* gallery start */
+#gallery{
+    padding: 50px 0 20px;
+}
+#gallery h2{
+    text-align: center;
+    color: #8a2a8a;
+}
+#gallery .img-gallery img{
+    height: 200px;
+    width: 280px;
+    border-radius: 15px;
+    margin: 20px;
+}
+
+/* gallery end */
+/* contact start */
+#contact{
+    padding: 50px 0 ;
+}
+#contact .container{
+    max-width: 900px;
+}
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#contact .contact-content .contact-info{
+    width: 50%;
+}
+#contact .contact-content .contact-info div{
+    margin: 30px 0;
+    line-height: 1.7;
+}
+#contact .contact-content .contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+#contact .contact-content .contact-info p{
+    color: #9a9a9a;
+}
+form{
+    width: 50%;
+}
+form input , textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: beige;
+}
+#contact .btn{
+    background: #531853;
+    color: #f4f4f4;
+    cursor: pointer;
+}
+
+#contact .btn:hover{
+    background-color: #531853;
+}
+
+/* contact end */
+/* footer start */
+#footer{
+    background-color: #531853;
+    text-align: center;
+    color: white;
+    padding: 15px 0;
+    font-size: 14px;
+}
